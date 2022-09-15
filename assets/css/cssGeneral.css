@@ -1,0 +1,192 @@
+body {
+	background-color:#e5e1e1;
+}
+
+div.column-container {
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	padding: 0px;
+}
+
+.form-title {
+	font-family: deaBold, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size:18px; color: #280B7E;
+	
+	padding:0px 0px 15px 0px; border-bottom:1px dotted #ccc;
+}
+
+div.column-container label,
+div.column-container input,
+div.column-container select,
+div.column-container textarea {
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size:14px;
+}
+
+div.column-container input.error,
+div.column-container select.error,
+div.column-container textarea.error {
+	background-color:#C10003; color:#fff;
+}
+
+div.column-container label {
+	display: block; padding: 10px 0px 2px 0px;
+}
+
+div.column-container div.info {
+	display: block; padding: 5px 0px 5px 0px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+div.column-container input[type=text], 
+div.column-container select,
+div.column-container textarea {
+	width: 100%;
+	padding: 12px 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+div.column-container input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+	div.column-container label.mandatory,
+	div.column-container input[type=text].mandatory{
+		font-family: deaBold, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	}
+
+
+div.column-container input:focus,
+div.column-container textarea:focus {
+	background-color:#f0f0f0;
+}
+
+div.column-container input.error:focus,
+div.column-container textarea.error:focus {
+	background-color:#9A0104; color:#fff;
+}
+
+div.form-error-container {
+	background-color:#C10003; color:#fff; padding:10px; overflow: hidden; border-radius: 5px;
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+/* BROWSER FORM */
+.browser-container {
+	position: absolute; padding:0px; left:0; right:0; top:0; bottom:0;
+}
+
+.browser-container .header-container {
+	position:absolute; left:0; right:0; top:0; height:80px;
+	overflow: hidden;
+}
+
+.browser-container .main-container {
+	position:absolute; left:0; right:0; top:81px; bottom:61px;
+	overflow: auto; background-color: #fff;
+	
+	border-top:1px solid #ccc; border-bottom:1px solid #ccc;
+}
+
+.browser-container .footer-container {
+	position:absolute; left:0; right:0; bottom:0px; height:60px;
+	overflow: hidden;
+}
+
+.browser-container .main-container table.browser th {
+	font-family: deaBold, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size:14px;
+	padding:16px 10px; border-bottom:1px solid #f0f0f0; border-right:1px solid #f0f0f0;
+	background-color: #e8e7e7;
+	text-transform: uppercase;
+}
+
+.browser-container .main-container table.browser th:last-child {
+	border-right:none;
+}
+
+.browser-container .main-container table.browser td {
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size:14px;
+	padding:8px 10px; border-bottom:1px solid #f0f0f0; border-right:1px solid #f0f0f0;
+	background-color: #fff;
+}
+
+.browser-container .main-container table.browser td:last-child {
+	border-right:none;
+}
+
+.browser-container .main-container table.browser tr.row-edit-container:hover td {
+	background-color:#f0f0f0; color:#1007AF;
+}
+
+.browser-container .main-container table.browser tr.row-edit-container td.edit-link,
+.browser-container .main-container table.browser tr.row-edit-container td.view-link {
+	text-transform: uppercase;
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	cursor: pointer;
+	font-size: 12px; vertical-align: middle; text-align: center;
+}
+
+.browser-container .main-container table.browser tr.row-edit-container td.edit-link:hover,
+.browser-container .main-container table.browser tr.row-edit-container td.view-link:hover {
+	background-color:#1019DD; color:#fff; text-decoration: underline;
+	font-family: deaBold;
+}
+
+/* FRAME DIALOG CONTAINER */
+.frame-dialog-container {
+	display: none;
+	position: absolute; left:20px; right:20px; top:20px; bottom:20px;
+	border:4px solid #000; border-radius: 10px; overflow: hidden;
+	 
+	max-width: 800px; margin: 0 auto;
+	box-shadow: 0px 3px 4px #333333;
+}
+
+/* PAGING */
+.page-option {
+	list-style: none; list-style-position: inside;
+}
+
+.page-option .page {
+	font-family: deaBold, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 14px;
+	
+	display:block; float:left; padding:10px 15px; margin:10px 2px;
+	cursor:pointer;
+}
+
+.page-option .page-title {
+	font-family: deaDefault, Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 14px;
+	
+	display:block; float:left; padding:10px 15px; margin:10px 2px;
+	cursor:default;
+}
+
+.page-option .page {
+	display:block; float:left; padding:10px 15px; margin:10px 2px;
+	border:1px solid #ccc;
+	cursor:pointer;
+}
+
+.page-option .page:hover {
+	background-color:#ccc; color:#fff;
+}
+
+.page-option .page.selected,
+.page-option .page:hover.selected{
+	background-color:#f0f0f0; color:#666; cursor: default;
+}
